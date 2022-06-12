@@ -26,21 +26,21 @@ io.on("connection", (socket) => {
 		addNewUser(username, socket.id);
 	});
 
-	//   socket.on("sendNotification", ({ senderName, receiverName, type }) => {
-	//     const receiver = getUser(receiverName);
-	//     io.to(receiver.socketId).emit("getNotification", {
-	//       senderName,
-	//       type,
-	//     });
-	//   });
+	socket.on("sendNotification", ({ senderName, receiverName, type }) => {
+		const receiver = getUser(receiverName);
+		io.to(receiver.socketId).emit("getNotification", {
+			senderName,
+			type,
+		});
+	});
 
-	//   socket.on("sendText", ({ senderName, receiverName, text }) => {
-	//     const receiver = getUser(receiverName);
-	//     io.to(receiver.socketId).emit("getText", {
-	//       senderName,
-	//       text,
-	//     });
-	//   });
+	socket.on("sendText", ({ senderName, receiverName, text }) => {
+		const receiver = getUser(receiverName);
+		io.to(receiver.socketId).emit("getText", {
+			senderName,
+			text,
+		});
+	});
 
 	socket.on("disconnect", () => {
 		removeUser(socket.id);

@@ -1,7 +1,7 @@
 export const posts = [
 	{
 		id: 1,
-		username: "Rauf",
+		username: "rauf",
 		fullname: "Rauf Sezar",
 		userImg:
 			"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
@@ -10,7 +10,7 @@ export const posts = [
 	},
 	{
 		id: 2,
-		username: "Sevda",
+		username: "sevda",
 		fullname: "Sevda sevdam",
 		userImg:
 			"https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
