@@ -1,0 +1,41 @@
+.navbar {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: white;
+	background-color: lightseagreen;
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 20px;
+}
+.icons {
+	display: flex;
+	align-items: center;
+}
+.icon {
+	cursor: pointer;
+	margin-left: 15px;
+	position: relative;
+}
+.iconImg {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+.counter {
+	height: 5px;
+	width: 5px;
+	background-color: red;
+	border-radius: 50%;
+	font-size: 12px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
